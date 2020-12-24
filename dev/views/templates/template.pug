@@ -8,6 +8,8 @@ html(lang="en")
         title Document
     body
         header#header.header 
+            a(href="/").logo
+                img(src="./assets/img/logo.png" alt="web logo")
             .topbar
                 .topbar__icon
                     i.fa.fa-user
@@ -15,5 +17,10 @@ html(lang="en")
                 .topbar__icon
                     i.fa.fa-user-plus
                     span Register
-        aside#sidebar.sidebar aside
-        main.main main
+                .toggle-menu
+                    #toggle-menu.toggle-menu__icon
+                        .first-bar
+                        .second-bar
+                        .third-bar
+        aside#sidebar.sidebar 
+        main.main
