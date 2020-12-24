@@ -1,0 +1,11 @@
+.header {
+    padding: 1em 0;
+    @include laptop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //disposicion respecto al grid de base
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}
