@@ -1,9 +1,16 @@
+//configuracion guias de estilo
+@import "config/colors";
+@import "config/fonts";
+
+//mixins
 @import "mixins/breakpoints";//propiedades dependiendo de los dispositivos
 @import "mixins/reset-list";//reset de estilos de listas
 
+//Estilos base
 @import "base/normalize";
 @import "base/base";
 
+//Bloques
 @import "blocks/header";
 @import "blocks/topbar";
 @import "blocks/toggle-menu";
