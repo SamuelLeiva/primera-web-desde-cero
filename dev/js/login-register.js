@@ -36,12 +36,22 @@ if(registerModal){
 
 if(loginForm){
     loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        //console.log(e.target)
+        setTimeout(() => {
+            e.target.button.blur()
+        }, 200)
+        console.log('SEND')
     })
 }
 
 if(registerForm){
     registerForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        //console.log(e.target)
+        setTimeout(() => {
+            e.target.button.blur()
+        }, 200)
+        console.log('SEND')
     })
 }
