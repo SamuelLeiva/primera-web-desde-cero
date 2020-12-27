@@ -11,11 +11,11 @@ html(lang="en")
         header#header.header 
             a(href="/").logo
                 img(src="./assets/img/logo.png" alt="web logo")
-            .topbar
-                .topbar__icon
+            #topbar.topbar
+                .topbar__icon(data-type="login")
                     i.fa.fa-user
                     span Log in
-                .topbar__icon
+                .topbar__icon(data-type="register")
                     i.fa.fa-user-plus
                     span Register
                 .toggle-menu
@@ -26,4 +26,6 @@ html(lang="en")
         #sidebar.sidebar
             block menu 
         main.main
+        include ../includes/login-modal
+        include ../includes/register-modal
         script(src="js/scripts-min.js")
